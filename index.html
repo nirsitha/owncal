@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>distance</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <div class="row mt-2"  id="bb" >
+        <div class="col-md-4 mt-4 ">
+            <img src="./image/arrow.png" alt="" width="80">
+        </div>
+        <div class="col-md-4 mt-4 "> 
+          <h3 class="font-weight-bold  text-center p-3  " style="font-family: cursive;"><img src="./image/unnamed.png" alt="" width="50">DISTANCE CONVERTOR <h1></h1></p> </h3> 
+
+         
+          
+        </div> <br> <br>
+        <div class="col-md-5"> 
+            
+        </div>
+    </div>
+    <div class="row  " >
+        <div class="row col-md-12 "  style="background-image: url(./image/icon.jpg); background-size: cover;">
+            
+            
+            <div class="row col-md-12 m-2 ml-3 border border-light" id="cc" > 
+                <div class=" col-md-5 mr-4">
+                    
+                    <p class=" mt-4 mr-3 ml-5 text-dark text-right font-weight-bold"> ENTER THE DISTANCE IN METERS</p>
+                </div>
+                <div class=" col-md-5 ml-5">
+                    
+                    <form action="">
+                        <div class="">
+                          <input type="" class="form-control form-control-sm mt-4" id="get1" placeholder="">
+                        </div>
+                      </form>
+                </div>
+                <div class="col-md-4  mr-4">
+                    
+                </div>
+                <div class="col-md-6 ml-5">
+                    <p><button type="button" class="btn btn-warning mt-2 " onclick="calculte()" >Convert..</button> </p> <br>  
+                </div>
+                <div class=" col-md-5 mr-4">
+                    
+                  <p class="  ml-5 mr-2 text-dark text-right font-weight-bold">DATA CONVERTED TO KILOMETERS</p>
+              </div>
+              <div class=" col-md-5 ml-5">
+                  
+                  <form action="">
+                      <div class="">
+                        <input type="" class="form-control form-control-sm " id="get2" placeholder="">
+                      </div>
+                    </form>
+              </div>
+              <div class=" col-md-5 mr-4">
+                    
+                <p class="  ml-5  text-dark text-right font-weight-bold">DATA CONVERTED TO CENTIMETERS</p>
+            </div>
+            <div class=" col-md-5 ml-5">
+                
+                <form action="">
+                    <div class="">
+                      <input type="" class="form-control form-control-sm " id="get3" placeholder="">
+                    </div>
+                  </form>
+            </div>
+            <div class=" col-md-5 mr-4">
+                    
+              <p class="  mr-5 text-dark text-right font-weight-bold">DATA CONVERTED TO INCHES</p>
+          </div>
+          <div class=" col-md-5 ml-5">
+              
+              <form action="">
+                  <div class="">
+                    <input type="" class="form-control form-control-sm " id="get4" placeholder="">
+                  </div>
+                </form>
+          </div>
+          <div class=" col-md-5 mr-4">
+                    
+            <p class="ml-5 text-dark mr-5 text-right font-weight-bold mb-5 ">DATA CONVERTED TO FEETS</p>
+        </div>
+        <div class=" col-md-5 ml-5">
+            
+            <form action="">
+                <div class="">
+                  <input type="" class="form-control form-control-sm " id="get5" placeholder="">
+                </div>
+              </form>
+        </div>
+        </div>
+    </div>
+    
+    <script>
+      function calculte(){
+        var j=0;
+        var x=parseInt(document.getElementById("get1").value);
+        
+        j=(x/1000);
+        document.getElementById("get2").value=j;
+        // document.writeln(j)
+        var k=0;
+        k=x*100;
+        document.getElementById("get3").value=k;
+        var l=0;
+        l=x*39.37;
+        document.getElementById("get4").value=l;
+        var m=0;
+        m=x*3.281
+        document.getElementById("get5").value=m;
+      }
+    </script>
+  </body>
+</html>
